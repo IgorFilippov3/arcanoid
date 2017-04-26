@@ -27,7 +27,8 @@ var background,
     lifeLostText,
     playing,
     startButton,
-    state
+    state,
+    ballVX
 ;
 
 function preload() {
@@ -82,10 +83,6 @@ function create() {
 
   game.physics.arcade.checkCollision.down = false;
 
-  // game.input.onDown.addOnce(function(){
-  //   ball.body.velocity.set(250, -250);
-  // }, this);
-
   scoreText = game.add.text(5,5, "Points: 0", {font: "18px Arial", fill: "#0095DD" });
 
   livesText = game.add.text(game.world.width - 5, 5, 'Lives: ' + lives, { font: '18px Arial', fill: '#0095DD' });
@@ -97,6 +94,11 @@ function create() {
 
   startButton = game.add.button(game.world.width / 2, game.world.height / 2, "button", startGame, this, 1, 0, 2);
   startButton.anchor.set(0.5);
+
+  pauseText = game.add.text(game.world.width / 2, game.world.height / 2, "Pause Game", { font: '18px Arial', fill: '#0095DD' });
+  pauseText.anchor.set(0.5);
+  pauseText.visible = false;
+
 }
 
 function update() {
@@ -223,8 +225,25 @@ function startGame() {
   startButton.destroy();
   ball.body.velocity.set(250, -250);
   playing = true;
+  game.input.onDown.add(pauseGame, this);
 }
 
 function endGame() {
   location.reload();
+}
+
+function pauseGame() {
+  // переход в паузу
+  if(playing) {
+     playing = false;
+     ballVX = JSON.parse(JSON.stringify(ball.body.velocity.x));
+     ball.body.velocity.set(0, 0);
+     pauseText.visible = true;
+  }
+  // переход в режим игры
+  else {
+      playing = true;
+      ball.body.velocity.set(ballVX, -250);
+      pauseText.visible = false;
+  }
 }
