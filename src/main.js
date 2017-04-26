@@ -208,10 +208,12 @@ function ballLeaveScreen() {
     if(lives) {
         livesText.setText('Lives: '+lives);
         lifeLostText.visible = true;
+        playing = false;
         ball.reset(game.world.width*0.5, game.world.height-25);
         paddle.reset(game.world.width*0.5, game.world.height-5);
         game.input.onDown.addOnce(function(){
             lifeLostText.visible = false;
+            playing = true;
             ball.body.velocity.set(250, -250);
         }, this);
     }
