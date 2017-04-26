@@ -1,0 +1,75 @@
+{"frames": {
+
+"blue_brick.png":
+{
+	"frame": {"x":0,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"green_brick.png":
+{
+	"frame": {"x":50,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"grey_brick.png":
+{
+	"frame": {"x":100,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"orange_brick.png":
+{
+	"frame": {"x":150,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"purple_brick.png":
+{
+	"frame": {"x":200,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"red_brick.png":
+{
+	"frame": {"x":250,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"yellow_brick.png":
+{
+	"frame": {"x":300,"y":0,"w":50,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+	"sourceSize": {"w":50,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "brickAtlas.png",
+	"format": "RGBA8888",
+	"size": {"w":350,"h":20},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:be4572a9b4bd1af1fab0faf4010c7f5e:af6edd7e7bd874f8431f4f8438e3efd6:b2e6e9a53a7ec686f5b4693bf5257f66$"
+}
+}
